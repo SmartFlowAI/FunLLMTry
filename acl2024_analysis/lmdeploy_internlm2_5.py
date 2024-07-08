@@ -16,6 +16,6 @@ gen_config = GenerationConfig(top_p=0.8,
                               temperature=0.8,
                               max_new_tokens=1024)
 response = pipe(prompt, gen_config=gen_config)
-with open('output.txt', 'w', encoding='utf-8') as f:
+with open('output.md', 'w', encoding='utf-8') as f:
     f.write(response.text)
-print('Done! Please check the output.txt file for the result.')
+print('Done! Please check the output.md file for the result.')
